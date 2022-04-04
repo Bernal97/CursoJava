@@ -16,7 +16,7 @@ public class promedioNotas {
             System.out.println("Usted esta desaprovado");
         } else if (promedio >= 10 && promedio < 15){
             System.out.println("Usted esta aprobado");
-        } else {
+        } else  if (promedio >= 15 && promedio < 20){
             System.out.println("Usted esta eximido");
         }
     }
