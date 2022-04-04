@@ -1,0 +1,19 @@
+Ejercicio 1 (Pares, Impares y el 0):  parImpares.java
+Algoritmo que compara y muestra si el numero ingresado es un par, impar o es 0,
+porque en muchas ramas de la matematica, al 0 se lo cuenta como par o
+directamente se lo ignora, asi que con esto cubrimos un caso que se lo aisla directamente
+
+
+Ejercicio 2 (Compras): dinero.java
+Pedir al usuario que ponga por teclado la cantidad de dinero ahorrado que posea e 
+imprimir en pantalla lo que le alcance comprar. En caso de que tenga entre 100 y 250,
+podrá comprar unos auriculares; si tiene mas de 250 pero menos de 350 podrá elegir 
+entre auriculares o un teclado; si tiene entre 350 y 800 podrá elegir entre unos
+auriculares + un teclado o un monitor
+
+
+Ejercicio 3 (Arreglos Positivos): arreglosPositivos.java
+Un algoritmo que le pide al usuario que ingrese valores positivos menores a 60 para
+añadirlos a un arreglo. Cuenta con un limite de arreglos que le indica cuantos numeros mas
+puede seguir añadiendo, mostrar todos los numeros mayores a uno a eleccion 
+y la opcion de cerrarlo antes al programa ingresando 0
