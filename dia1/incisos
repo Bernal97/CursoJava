@@ -1,0 +1,31 @@
+Dia 1
+Challenge Algoritmos
+Realizar un algoritmo que permita calcular el índice de masa corporal de una persona, ingresando sus valores del peso y la altura,  indique su valor según la siguiente tabla:
+Valor de IMC
+Diagnóstico
+< 20
+Mal estado
+De 20 a 22
+Bajo de Peso
+De 22 a 25
+Peso Normal
+De 25 a 30
+Sobrepeso
+De 30 a 40
+Sobrepeso crónico
+> 40
+Hospitalizado
+
+
+Tomando en cuenta la fórmula para el cálculo de la masa corporal MC=PESO/ALTURA 
+
+Realizar un programa para el cálculo de las raíces de ecuación de segundo grado, el programa debe diferenciar entre las raíces imaginarias, raíces distintas, raíces iguales.
+
+Realizar un programa para calcular el promedio de tres notas, e indique si el promedio es menor de 10 que muestre reprobado, si es mayor que 10 pero menor que 15 aprobado, y mayor de 15 eximido.
+
+
+Realizar un programa que indique el mayor de tres valores numéricos.
+
+Realizar un programa que indique el menor de tres valores numéricos. 
+
+Crea una aplicación que pida un número por teclado y después comprobaremos si el número introducido es capicúa, es decir, que se lee igual sin importar la dirección. Por ejemplo, si introducimos 30303 es capicúa, si introducimos 30430 no es capicua. Piensa cómo puedes dar la vuelta al número. Una forma de pasar un número a un array es esta Character.getNumericValue(cadena.charAt(posicion)).
