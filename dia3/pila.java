@@ -1,23 +1,23 @@
 
 package Challenges.dia3;
 import java.util.Scanner;
+
 public class pila {
     private int[] pila;
     private int tope = -1;
     private int max = 0;
     
-    public pila (int largo){
+    public pila (){
         tope = -1;
-        pila = new int[largo];
+        pila = new int[10];
         max = pila.length;
     }
     
-     public void pop(){
-        Scanner teclado = new Scanner(System.in);
+     public void pop(int val){
+
         if(tope < pila.length){
-            System.out.println("Ingrese un numero");
             this.tope++;
-            this.pila[this.tope] = teclado.nextInt();
+            this.pila[this.tope] = val;
             
         }else{
             System.out.println("Maximo alcanzado, no puede agregarse mas");
@@ -35,7 +35,7 @@ public class pila {
         return val;
     }
     
-     Object top (){
+     int top (){
         return this.pila[this.tope];
     }
      
@@ -43,6 +43,14 @@ public class pila {
          return this.tope;
      }
     
+     public pila clone(){
+        pila clonar;
+        clonar = new pila();
+        clonar.tope = this.tope;
+        clonar.pila = this.pila.clone();
+        return clonar;
+    }
+     
     public boolean pilaLlena(){
         return (this.tope == this.max);
     }
