@@ -53,7 +53,7 @@ public class testVehiculo {
                 case 1: System.out.println(b.toString()); break;
                 case 2: System.out.println("Cuanto desea acelerar?");
                         KM = teclado.nextDouble();
-                        b.verificarAceleracion(KM);break;
+                        b.acelerar(KM);break;
                 case 3: System.out.println("Cuanto desea desacelerar?");
                         KM = teclado.nextDouble();
                         b.desacelerar(KM); break;

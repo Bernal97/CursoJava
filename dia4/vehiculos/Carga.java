@@ -17,16 +17,15 @@ public class Carga extends Vehiculo{
        return this.carga = a;
     }
     
-    public void verificarAceleracion(double speed){
-        if(this.carga == null){
-            double velocidad = getVelocidad()+ speed;
-            setVelocidad(velocidad);         
-        }else {
+    @Override
+    public double acelerar(double speed) {  
             if (this.getVelocidad() + speed > 100 && this.carga != null){
                 System.out.println("Alcanzo el limite maximo de velocidad permitida");
                 setVelocidad(100);
+                return getVelocidad();
             }
-        }
+            setVelocidad(this.getVelocidad() + speed);
+        return getVelocidad();
     }
     
     public Remolque quitarRemolque(){
