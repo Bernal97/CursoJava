@@ -1,0 +1,10 @@
+-------------------------------------------------------------------------------
+Test set: PairPrograming.programing.ProgramingApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 4.279 s <<< FAILURE! - in PairPrograming.programing.ProgramingApplicationTests
+contextLoads  Time elapsed: 0.009 s  <<< ERROR!
+java.lang.IllegalStateException: Failed to load ApplicationContext
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'mongo' defined in class path resource [org/springframework/boot/autoconfigure/mongo/MongoAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.mongodb.client.MongoClient]: Factory method 'mongo' threw exception; nested exception is java.lang.NoSuchMethodError: 'java.lang.String com.mongodb.connection.ClusterSettings.getDescription()'
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.mongodb.client.MongoClient]: Factory method 'mongo' threw exception; nested exception is java.lang.NoSuchMethodError: 'java.lang.String com.mongodb.connection.ClusterSettings.getDescription()'
+Caused by: java.lang.NoSuchMethodError: 'java.lang.String com.mongodb.connection.ClusterSettings.getDescription()'
+

@@ -1,0 +1,6 @@
+PairPrograming\programing\controller\AutoController.class
+PairPrograming\programing\services\AutoService.class
+PairPrograming\programing\ProgramingApplication.class
+PairPrograming\programing\ServletInitializer.class
+PairPrograming\programing\models\Auto.class
+PairPrograming\programing\services\ConexionMongo.class
