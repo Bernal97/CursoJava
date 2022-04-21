@@ -1,1 +1,3 @@
 Hola, soy un campo sin importancia
+El campo sin importancia tiene un mensaje
+la carpeta apiRest tiene la API funcionando con spring boot y mongoDB, ya funciona al 100% al pasarlo por postman
