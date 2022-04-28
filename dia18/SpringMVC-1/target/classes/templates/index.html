@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+	<head> 
+		<title> MVC Prototipo </title>
+	</head>
+	
+	<body>
+	<table>
+		<tr>
+			<th> ID </th>
+			<th> firstName </th>
+			<th> lastName </th>
+			<th> ShowRacer </th>
+		</tr>
+		<tr th:each = "user :${User}">
+			<th th:text = "${user.id}"></th>
+			<th th:text = "${user.firstName}"></th>
+			<th th:text = "${user.lastName}"></th>
+			<th th:href><a>Ver Corredor</a></th>
+		</tr>		
+	</table>
+	<a th:href >Crear Corredor</a>
+	</body>
+</html>
