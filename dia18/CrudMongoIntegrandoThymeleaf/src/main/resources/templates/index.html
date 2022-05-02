@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <title>Driver</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    </head>
+    <body>
+        <div th:switch="${User}">
+            <h2 th:case="null">No Drivers Available</h2>
+            <div th:case="*">
+                <h2>Driver</h2>
+                <table>
+                    <thead>
+                    <tr>
+                        <th>firstName</th>
+                        <th>lastName</th>
+                        <th>Age</th>
+                        <th>Win</th>
+                        <th>Edit</th>
+                        <th>Delete</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr th:each="users : ${User}">
+                        <td th:text="${users.firstName}"></td>
+                        <td th:text="${users.lastName}"></td>
+                        <td th:text="${users.age}"></td>
+                        <td th:text="${users.win}"></td>
+                        <td><a th:href="@{/users/edit/{id}(id=${users.id})}">Edit</a></td>
+                        <td><a th:href="@{/users/delete/{id}(id=${users.id})}">Delete</a></td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <a th:href="@{/users/create}">Add a new racer</a>
+        </div>
+    </body>
+</html>

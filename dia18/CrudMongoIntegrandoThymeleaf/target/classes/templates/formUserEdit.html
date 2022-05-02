@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns:th="http://thymeleaf.org">
+	<head>
+		<title>Create Driver </title>
+	</head>
+	<body>
+		<form th:acction="@{/users}" th:object="${User}" method="put">
+			<label>firstName: </label>
+			<input type="text" name="firstName" th:field="*{firstName}"/>
+			<br>
+			<label>lastName: </label>
+			<input type="text" name="lastName" th:field="*{lastName}"/>
+			<br>
+			<label>Age: </label>
+			<input type="text" name="age" th:field="*{age}"/>
+			<br>
+			<label>Win: </label>
+			<input type="text" name="win" th:field="*{win}"/>
+			<button type="submit">
+				Update user 
+			</button>
+			<br>
+		</form>
+		<a th:href="@{/users}">Go back</a>
+	</body>
+</html>
