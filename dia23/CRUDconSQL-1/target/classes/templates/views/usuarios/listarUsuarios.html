@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head th:replace="plantilla/template :: head">
+</head>
+
+<body>
+	<header th:replace="plantilla/template :: header"></header>
+
+	<div class="container">
+		<h1 th:text="${Titulo}"> </h1>
+	</div>
+	<div class="container">
+		<table class="table">
+			<thead class="thead-dark">
+				<tr>
+					<th scope="col">Nombre</th>
+					<th scope="col">Apellido</th>
+					<th scope="col">DNI</th>
+					<th scope="col">Email</th>
+					<th scope="col">Telefono</th>
+					<th scope="col">Acciones</th>
+					
+				</tr>
+			</thead>
+			<tbody>
+				<tr th:each="usr: ${Persona}">
+					<td scope="row" th:text="${usr.nombre}"></td>
+					<td th:text="${usr.apellido}"></td>
+					<td th:text="${usr.dni}"></td>
+					<td th:text="${usr.email}"></td>
+					<td th:text="${usr.telefono}"></td>
+					<td>
+					<a th:href ="@{/views/usuarios/editar/{id}(id = ${usr.id})}">Editar</a>
+					<a th:href ="@{/views/usuarios/eliminar/{id}(id = ${usr.id})}">Eliminar</a>
+					</td>
+				</tr>
+				
+			</tbody>
+		</table>
+
+	</div>
+
+	<footer th:replace="plantilla/template :: footer"></footer>
+</body>
+
+</html>
