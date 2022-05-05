@@ -1,6 +1,6 @@
 Hola soy un texto ordenativo
 ----------------------------
 
-Tuve que Rehacer traspaso de MongoDB a SQL por
+Tuve que hacer traspaso de MongoDB a SQL por
 Ver cuestiones relacionadas a QUERY's
 Usare esto como base para ir ampliando dichos QUERY's
