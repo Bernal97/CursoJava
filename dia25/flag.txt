@@ -1,0 +1,3 @@
+Esto es un text ordenativo
+La pagina de la F1 ya permite filtrar los monoplazas por el nombre del equipo para una busqueda mas sencilla
+Falta todavia la opcion de asignarle corredores a X monoplaza y poder quitar al corredor activo en el monoplaza
