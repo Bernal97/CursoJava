@@ -1,1 +1,4 @@
 Soy un .txt
+
+
+Cuenta con autenticacion de usuario-admin con JWT, falta nomas implementarlo en thymeleaf para tener permisos
